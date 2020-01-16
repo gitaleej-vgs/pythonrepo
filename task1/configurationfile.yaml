@@ -1,0 +1,10 @@
+resources:
+- type: gcp-types/compute-v1:disks
+  name: disk
+  properties:
+    zone: us-central1-a
+    machineType: zones/us-central1-a/machineTypes/f1-micro
+    sizeGb: 10
+    type: PERSISTENT
+    sourceImage: projects/debian-cloud/global/images/family/debian-9
+    

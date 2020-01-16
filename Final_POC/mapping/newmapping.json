@@ -1,0 +1,100 @@
+{
+      "Mappings": {
+		"InstanceType": {
+            "t2.micro": "f1-micro",
+             "t2.small":"f1-micro",
+			"m3.medium - m3.2xlarge": {
+                              "Gcp": "n1-standard-1 - n1-standard-64"
+                        },
+                        "m4.large - m4.10xlarge": {
+                              "Gcp": "n1-standard-1 - n1-standard-64"
+                        },
+                        "r3.large - r3.8xlarge": {
+                              "Gcp": "n1-highmem-2 - n1-highmem-64"
+                        },
+                        "x1.32xlarge": {
+                              "Gcp": "n1-highmem-2 - n1-highmem-64"
+                        },
+                        "c3.large - c3.8xlarge": {
+                              "Gcp": "n1-highcpu-2 - n1-highcpu-64"
+                        },
+                        "c4.large - c4.8xlarge": {
+                              "Gcp": "n1-highcpu-2 - n1-highcpu-64"
+                        },
+                        "i2.xlarge - i2.8xlarge": {
+                              "Gcp1": "n1-standard-1 - n1-standard-64",
+                              "Gcp2": "n1-highmem-2 - n1-highmem-64",
+                              "Gcp3": "n1-highcpu-2 - n1-highcpu-64"
+                        }
+                        },      
+                        
+        "AvailabilityZone":{
+			"us-east-1a":"us-east4-a",
+			"us-east-1b":"us-east4-b",
+                  "us-east-1c":"us-east4-c",
+                  "us-east-1d":"us-east4-a",
+                  "us-east-1e":"us-east4-c",
+                  "us-east-1f":"us-east4-b",
+                  "us-west-2a":"us-west1-a",
+                  "us-west-2b":"us-west1-b",
+                  "us-west-2c":"us-west1-c",
+                  "us-west-1a":"us-west2-a",
+                  "us-west-1b":"us-west2-b",
+                  "eu-west-1a":"europe-west2-a",
+                  "eu-west-1b":"europe-west2-b",
+                  "eu-west-1c":"europe-west2-c",
+                  "eu-central-1a":"",
+                  "eu-central-1b":"",
+                  "ap-southeast-1a":"asia-southeast1-a",
+                  "ap-southeast-1b":"asia-southeast1-b",
+                  "ap-southeast-2a":"australia-southeast1-a",
+                  "ap-southeast-2b":"australia-southeast1-b",
+                  "ap-southeast-2c":"australia-southeast1-c",
+                  "ap-northeast-1a":"asia-northeast1-a",
+                  "ap-northeast-1c":"asia-northeast1-c",
+                  "sa-east-1a":"southamerica-east1-a",
+                  "sa-east-1b":"southamerica-east1-b",
+                  "sa-east-1c":"southamerica-east1-c",
+                  "ap-south-1a":"asia-south1-a",
+                  "ap-south-1b":"asia-south1-b"
+            },
+            "Regions":{
+                  "us-east-2":"us-east4",
+                  "us-east-1":"us-east4",
+                  "us-west-1":"us-west2",
+                  "us-west-2":"us-west1",
+                  "ap-east-1":"asia-east2",
+                  "ap-south-1":"asia-south1",
+                  "ap-northeast-2":"asia-northeast2",
+                  "ap-southeast-1":"asia-southeast1",
+                  "ap-southeast-2":"australia-southeast1",
+                  "ap-northeast-1":"asia-northeast1",
+                  "ca-central-1":"northamerica-northeast",
+                  "cn-north-1":"asia-northeast2",
+                  "cn-northwest-1":"europe-west3",
+                  "eu-central-1":"",
+                  "eu-west-1":"europe-west2",
+                  "eu-west-2":"europe-west2",
+                  "eu-west-3":"europe-west1",
+                  "eu-north-1":"europe-west4",
+                  "me-south-1":"",
+                  "sa-east-1":"southamerica-east1"
+            }
+
+		},
+      "Services": {
+            "EC2": "compute",
+			"Volume":"Disk"
+            
+      },
+	  "Subservices":{
+		"Instance":"instance",
+		"Volume":"disk"
+	  },
+	  "Properties":{
+		"AvailabilityZone":"zone",
+		"InstanceType":"machineType",
+		"Size":"sizeGb"
+	  }
+
+}

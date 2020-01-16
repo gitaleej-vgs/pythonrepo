@@ -1,0 +1,44 @@
+{
+      "Mappings": {
+            "EC2": {
+                  "InstanceType": {
+                        "t2.micro": {
+                              "Gcp1": "f1-micro",
+                              "Gcp2": "g1-small"
+                        },
+                        "m3.medium - m3.2xlarge": {
+                              "Gcp": "n1-standard-1 - n1-standard-64"
+                        },
+                        "m4.large - m4.10xlarge": {
+                              "Gcp": "n1-standard-1 - n1-standard-64"
+                        },
+                        "r3.large - r3.8xlarge": {
+                              "Gcp": "n1-highmem-2 - n1-highmem-64"
+                        },
+                        "x1.32xlarge": {
+                              "Gcp": "n1-highmem-2 - n1-highmem-64"
+                        },
+                        "c3.large - c3.8xlarge": {
+                              "Gcp": "n1-highcpu-2 - n1-highcpu-64"
+                        },
+                        "c4.large - c4.8xlarge": {
+                              "Gcp": "n1-highcpu-2 - n1-highcpu-64"
+                        },
+                        "i2.xlarge - i2.8xlarge": {
+                              "Gcp1": "n1-standard-1 - n1-standard-64",
+                              "Gcp2": "n1-highmem-2 - n1-highmem-64",
+                              "Gcp3": "n1-highcpu-2 - n1-highcpu-64"
+                        }
+                  }
+            }
+      },
+      "ServiceMap": {
+            "EC2": {
+                  "Compute-Engine": {
+                        "Instance": "VM"
+
+                  }
+            }
+      }
+
+}

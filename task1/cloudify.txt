@@ -1,0 +1,7 @@
+1)What is cloudify?
+--> Cloudify is an open source cloud orchestration framework.
+2)What they do?
+--> 1)model applications and services and automate their entire life cycle.
+2)deployment on any cloud or data center environment.
+3monitoring all aspects of a deployed application.
+4)

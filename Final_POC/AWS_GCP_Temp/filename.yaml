@@ -1,0 +1,22 @@
+resources:
+- name: resource0
+  properties: &id001
+    disks:
+    - boot: true
+      deviceName: boot
+      initializeParams:
+        sourceImage: projects/debian-cloud/global/images/family/debian-9
+      type: PERSISTENT
+    machineType: zones/us-central1-a/machineTypes/zones/us-central1-a/machineTypes/zones/us-central1-a/machineTypes/f1-micro
+    networkInterfaces:
+    - network: global/networks/default
+    zone: us-central1-a
+  type: compute.v1.instance
+- name: resource1
+  properties: *id001
+  type: compute.v1.instance
+- name: resource2
+  properties:
+    sizeGb: 10
+    zone: us-central1-a
+  type: compute.v1.disk

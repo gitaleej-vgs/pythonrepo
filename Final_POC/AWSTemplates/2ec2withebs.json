@@ -1,0 +1,93 @@
+{
+  "Resources": {
+
+    "Vm1": {
+
+      "Type": "AWS::EC2::Instance",
+
+      "Properties": {
+
+        "AvailabilityZone": "us-east-1a",
+
+        "BlockDeviceMappings": [
+
+          {
+
+            "DeviceName": "/dev/sdc",
+
+            "Ebs": {
+              "VolumeSize": "5"
+            }
+
+          },
+
+          {
+
+            "DeviceName": "/dev/sdd",
+
+            "Ebs": {
+              "VolumeSize": "8"
+            }
+
+          }
+
+        ],
+
+        
+
+        "ImageId": "ami-00068cd7555f543d5",
+
+        "InstanceType": "t2.micro",
+
+        "SecurityGroups": ["default"],
+         "KeyName": "ec2withebs",
+
+        "Volumes": [
+
+          {
+            "VolumeId": {
+              "Ref": "NewVolume"
+            },
+            "Device": "/dev/sdk"
+          }
+
+        ]
+
+      }
+
+    },
+    "Vm2": {
+
+      "Type": "AWS::EC2::Instance",
+
+      "Properties": {
+
+        "AvailabilityZone": "us-east-1b",
+
+        "ImageId": "ami-00068cd7555f543d5",
+
+        "InstanceType": "t2.small",
+
+        "SecurityGroups": ["default"],
+         "KeyName": "ec2withebs"
+
+       }
+
+    },
+
+    "NewVolume": {
+
+      "Type": "AWS::EC2::Volume",
+
+      "Properties": {
+
+        "Size": "5",
+
+        "AvailabilityZone": "us-east-1a"
+
+      }
+
+    }
+
+  }
+}

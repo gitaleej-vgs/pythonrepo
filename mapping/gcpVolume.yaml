@@ -1,0 +1,21 @@
+resources:
+- name: vm-created-by-deployment-manager
+  type: compute.v1.instance
+  properties:
+    zone: us-central1-a
+    machineType: zones/us-central1-a/machineTypes/f1-micro
+    disks:
+    - deviceName: boot
+      type: PERSISTENT
+      boot: true
+      initializeParams:
+        sourceImage: projects/debian-cloud/global/images/family/debian-9
+    networkInterfaces:
+    - network: global/networks/default
+- name: vm-created-by-deployment
+  type: compute.v1.disk
+  properties:
+    zone: us-central1-a
+    sizeGb: 10
+    
+    
