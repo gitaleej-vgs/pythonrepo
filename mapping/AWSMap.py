@@ -11,7 +11,7 @@ class GcpTemplate:
         pass
 
     def getgcptemplate(self):
-        servicesNames=[]
+        servicesNames =[]
         finalArray=[]
         finalGcpArray=[]
         count=0
